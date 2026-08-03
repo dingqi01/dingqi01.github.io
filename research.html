@@ -1,55 +1,48 @@
 ---
 title: "Research"
 slug: research
-description: "Research themes spanning transport decarbonization, electric mobility, hydrogen, integrated energy systems, and climate policy."
+description: "Research by Qi Ding on transport decarbonization, electric mobility, hydrogen, integrated energy systems, and climate policy."
 permalink: /research/
 ---
 
-<section class="page-hero shell">
-  <p class="eyebrow">Research</p>
-  <h1>Systems questions at the intersection of mobility, energy, and climate.</h1>
-  <p class="page-lead">
-    My research examines transitions that cross conventional sector boundaries. The common
-    objective is to connect long-term pathways with operational and spatial detail—so that
-    decarbonization strategies remain credible when infrastructure, behavior, and uncertainty matter.
+<header class="site-shell page-header">
+  <p class="section-label">Research</p>
+  <h1>Mobility, energy systems, and the transition to net zero</h1>
+  <p class="page-intro">
+    My research connects long-term transition pathways with operational, spatial, and infrastructure detail.
+    Across the topics below, the common aim is to make model boundaries explicit and transition evidence more useful for decisions.
   </p>
-</section>
+</header>
 
-<section class="section shell research-detail-list">
-  {% for area in site.data.research %}
-    <article id="area-{{ area.number }}" class="research-detail">
+<section class="site-shell page-section research-details" aria-label="Research areas">
+  {% for area in site.data.research.areas %}
+    <article id="area-{{ area.number }}">
       <span class="research-number">{{ area.number }}</span>
       <div>
         <h2>{{ area.title }}</h2>
-        <p class="research-detail-short">{{ area.short }}</p>
+        <p class="research-short">{{ area.short }}</p>
         <p>{{ area.detail }}</p>
       </div>
     </article>
   {% endfor %}
 </section>
 
-<section class="methods-band">
-  <div class="shell methods-grid">
-    <div>
-      <p class="eyebrow">Methods</p>
-      <h2>From pathways to operations</h2>
-    </div>
-    <ul class="method-list">
-      <li>Integrated assessment and energy-system modeling</li>
-      <li>Mathematical optimization and scenario analysis</li>
-      <li>Techno-economic and lifecycle assessment</li>
-      <li>GIS, spatial analysis, and data-driven modeling</li>
-      <li>Power-system and transport-model coupling</li>
-      <li>Climate-stress and robustness analysis</li>
-    </ul>
+<section class="site-shell page-section methods-section" aria-labelledby="methods-heading">
+  <div class="section-header">
+    <h2 id="methods-heading">Methods</h2>
   </div>
+  <ul class="methods-list">
+    {% for method in site.data.research.methods %}<li>{{ method }}</li>{% endfor %}
+  </ul>
 </section>
 
-<section class="section shell research-principle">
-  <p class="eyebrow">Working principle</p>
-  <blockquote>
-    Models are most useful when their boundaries are explicit, their evidence is traceable,
-    and their results can be connected to real infrastructure and policy decisions.
-  </blockquote>
+<section class="site-shell page-section research-note" aria-labelledby="approach-heading">
+  <div class="section-header">
+    <h2 id="approach-heading">Research approach</h2>
+  </div>
+  <p>
+    I use models as structured ways to connect evidence across scales—from national pathways and provincial
+    infrastructure to charging operations and technology choices. The emphasis is on transparent assumptions,
+    traceable data, and comparisons that remain meaningful under uncertainty.
+  </p>
 </section>
-

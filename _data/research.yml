@@ -1,29 +1,40 @@
-- number: "01"
-  title: "Transport decarbonization"
-  short: "Pathways for low-carbon mobility across technologies, fuels, infrastructure, and policy."
-  detail: >-
-    I study how passenger and freight transport can transition toward net-zero emissions,
-    with attention to technology adoption, energy demand, material implications, and the
-    system-wide effects of mobility change.
-- number: "02"
-  title: "Electric mobility & power systems"
-  short: "Charging, V2G, flexibility, and resilience at the transport–power interface."
-  detail: >-
-    This work connects electric-vehicle behavior and charging infrastructure with power-system
-    operations and planning, asking when flexible charging can create reliable and measurable
-    system value.
-- number: "03"
-  title: "Hydrogen & low-carbon fuels"
-  short: "Infrastructure and fuel choices for harder-to-electrify transport applications."
-  detail: >-
-    I evaluate hydrogen and hydrogen-derived fuels for ports, airports, and long-distance
-    transport, combining spatial infrastructure analysis with techno-economic and policy
-    assessment.
-- number: "04"
-  title: "Integrated energy & climate policy"
-  short: "Model coupling and evidence for robust transition decisions under uncertainty."
-  detail: >-
-    I develop and connect optimization, integrated assessment, and data-driven models to
-    examine interactions among end-use transitions, power systems, climate stress, and
-    long-term policy choices.
+areas:
+  - number: "01"
+    title: "Transport decarbonization"
+    short: "Technology, fuel, infrastructure, and policy pathways for low-carbon passenger and freight mobility."
+    detail: >-
+      I study how transport demand, vehicle technologies, energy carriers, and infrastructure
+      evolve together on the path to net-zero emissions. The work considers not only direct
+      energy use and emissions, but also upstream energy, fleet turnover, and material demand.
 
+  - number: "02"
+    title: "Electric mobility and power systems"
+    short: "Charging, vehicle-to-grid flexibility, and resilience at the transport–power interface."
+    detail: >-
+      This research connects electric-vehicle behavior and charging infrastructure with power-system
+      operations and planning. It asks when flexible charging can create reliable system value and
+      how that value changes across locations, transition pathways, and climate conditions.
+
+  - number: "03"
+    title: "Hydrogen and low-carbon fuels"
+    short: "Infrastructure and fuel choices for transport applications that are harder to electrify."
+    detail: >-
+      I evaluate hydrogen and hydrogen-derived fuels for long-distance transport, ports, and airports,
+      combining spatial infrastructure analysis with techno-economic assessment to examine where
+      production, transport, and demand can be coordinated effectively.
+
+  - number: "04"
+    title: "Integrated energy and climate policy"
+    short: "Model coupling and traceable evidence for transition decisions under uncertainty."
+    detail: >-
+      I develop and connect optimization, integrated-assessment, and data-driven models to examine
+      interactions among end-use transitions, power systems, climate stress, and long-term policy.
+      The emphasis is on transparent boundaries and evidence that can inform real infrastructure decisions.
+
+methods:
+  - "Integrated assessment and energy-system modeling"
+  - "Mathematical optimization and scenario analysis"
+  - "Techno-economic and lifecycle assessment"
+  - "GIS and spatial analysis"
+  - "Data-driven modeling"
+  - "Power-system and transport-model coupling"

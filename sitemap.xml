@@ -4,13 +4,8 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% assign pages = site.pages | where_exp: "item", "item.sitemap != false" %}
-  {% for item in pages %}
-    {% if item.url and item.url != '/404.html' and item.url != '/sitemap.xml' and item.url != '/robots.txt' %}
-      <url>
-        <loc>{{ item.url | absolute_url }}</loc>
-      </url>
-    {% endif %}
-  {% endfor %}
+  <url><loc>{{ '/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/research/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/publications/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/cv/' | absolute_url }}</loc></url>
 </urlset>
-

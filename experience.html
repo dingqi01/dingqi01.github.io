@@ -1,54 +1,18 @@
 ---
-title: "Experience"
-slug: experience
-description: "Education, research experience, collaborations, and selected recognition for Qi Ding."
+layout: null
 permalink: /experience/
+sitemap: false
 ---
-
-<section class="page-hero shell">
-  <p class="eyebrow">Experience</p>
-  <h1>Research shaped across institutions, models, and policy contexts.</h1>
-  <p class="page-lead">
-    My training combines vehicle engineering, management science, energy-system modeling, and
-    collaborative research on climate and infrastructure transitions.
-  </p>
-</section>
-
-<section class="section shell timeline-section">
-  <div class="timeline-group">
-    <h2>Education</h2>
-    {% for item in site.data.experience.education %}
-      <article class="timeline-item">
-        <time>{{ item.period }}</time>
-        <div>
-          <h3>{{ item.institution }}</h3>
-          <p class="timeline-role">{{ item.role }}</p>
-          <p>{{ item.detail }}</p>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-  <div class="timeline-group">
-    <h2>Selected research experience</h2>
-    {% for item in site.data.experience.research %}
-      <article class="timeline-item">
-        <time>{{ item.period }}</time>
-        <div>
-          <h3>{{ item.institution }}</h3>
-          <p class="timeline-role">{{ item.role }}</p>
-          <p>{{ item.detail }}</p>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-  <div class="timeline-group">
-    <h2>Recognition</h2>
-    {% for item in site.data.experience.awards %}
-      <article class="timeline-item timeline-item--compact">
-        <time>{{ item.period }}</time>
-        <div><h3>{{ item.institution }}</h3></div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url={{ '/cv/' | relative_url }}">
+    <link rel="canonical" href="{{ '/cv/' | absolute_url }}">
+    <title>Experience — Qi Ding</title>
+  </head>
+  <body>
+    <p>Experience is now included in the <a href="{{ '/cv/' | relative_url }}">curriculum vitae</a>.</p>
+  </body>
+</html>

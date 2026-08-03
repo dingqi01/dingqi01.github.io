@@ -1,35 +1,60 @@
 ---
 title: "Publications"
 slug: publications
-description: "Publications and presentations by Qi Ding on transport, energy systems, electric mobility, hydrogen, and climate policy."
+description: "Peer-reviewed publications, preprints, manuscripts, presentations, and reports by Qi Ding."
 permalink: /publications/
 ---
 
-<section class="page-hero shell page-hero--split">
-  <div>
-    <p class="eyebrow">Publications</p>
-    <h1>Research outputs and ongoing work.</h1>
-  </div>
-  <p class="page-lead">
-    Selected journal articles, conference papers, reports, and work in progress. Links point to
-    the DOI, publisher, preprint, or conference record when a public source is available.
+<header class="site-shell page-header">
+  <p class="section-label">Publications</p>
+  <h1>Research outputs</h1>
+  <p class="page-intro">
+    Peer-reviewed publications are listed separately from preprints, manuscripts, presentations, and report contributions.
+    Links point to the publisher, DOI, preprint, or meeting record when a public source is available.
   </p>
+</header>
+
+{% assign published = site.data.publications | where: "group", "published" %}
+{% assign ongoing = site.data.publications | where: "group", "ongoing" %}
+{% assign presentations = site.data.publications | where: "group", "presentations" %}
+{% assign reports = site.data.publications | where: "group", "reports" %}
+
+<section class="site-shell publication-group" aria-labelledby="published-heading">
+  <div class="group-heading">
+    <h2 id="published-heading">Peer-reviewed publications</h2>
+    <span>{{ published.size }}</span>
+  </div>
+  <div class="publication-list">
+    {% for publication in published %}{% include publication-card.html publication=publication %}{% endfor %}
+  </div>
 </section>
 
-<section class="section shell publications-section">
-  <div class="publication-toolbar" aria-label="Filter publications">
-    <button class="filter-button is-active" type="button" data-filter="all">All</button>
-    <button class="filter-button" type="button" data-filter="journal">Journal</button>
-    <button class="filter-button" type="button" data-filter="conference">Conference</button>
-    <button class="filter-button" type="button" data-filter="preprint">Preprint</button>
-    <button class="filter-button" type="button" data-filter="working-paper">Working paper</button>
-    <button class="filter-button" type="button" data-filter="report">Report</button>
+<section class="site-shell publication-group" aria-labelledby="ongoing-heading">
+  <div class="group-heading">
+    <h2 id="ongoing-heading">Preprint and manuscript</h2>
+    <span>{{ ongoing.size }}</span>
   </div>
-  <div class="publication-list" data-publication-list>
-    {% assign publications = site.data.publications | sort: "year" | reverse %}
-    {% for publication in publications %}
-      {% include publication-card.html publication=publication %}
-    {% endfor %}
+  <div class="publication-list">
+    {% for publication in ongoing %}{% include publication-card.html publication=publication %}{% endfor %}
   </div>
-  <p class="filter-empty" data-filter-empty hidden>No publications match this filter.</p>
+</section>
+
+<section class="site-shell publication-group" aria-labelledby="presentations-heading">
+  <div class="group-heading">
+    <h2 id="presentations-heading">Selected presentations</h2>
+    <span>{{ presentations.size }}</span>
+  </div>
+  <div class="publication-list publication-list--compact">
+    {% for publication in presentations %}{% include publication-card.html publication=publication compact=true %}{% endfor %}
+  </div>
+</section>
+
+<section class="site-shell publication-group" aria-labelledby="reports-heading">
+  <div class="group-heading">
+    <h2 id="reports-heading">Report contribution</h2>
+    <span>{{ reports.size }}</span>
+  </div>
+  <div class="publication-list publication-list--compact">
+    {% for publication in reports %}{% include publication-card.html publication=publication compact=true %}{% endfor %}
+  </div>
 </section>

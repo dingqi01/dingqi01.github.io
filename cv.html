@@ -1,24 +1,31 @@
 ---
 title: "CV"
 slug: cv
-description: "Curriculum vitae of Qi Ding."
+description: "Academic curriculum vitae of Qi Ding, Ph.D. candidate at Tsinghua University."
 permalink: /cv/
 ---
 
-<section class="page-hero shell page-hero--split cv-intro">
+<header class="site-shell page-header cv-header">
   <div>
-    <p class="eyebrow">Curriculum vitae</p>
+    <p class="section-label">Curriculum vitae</p>
     <h1>Qi Ding</h1>
+    <p class="page-intro">Education, research experience, methods, selected publications, and recognition.</p>
   </div>
-  <div>
-    <p class="page-lead">A concise academic CV covering education, research experience, and selected outputs.</p>
-    <a class="button button--primary" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" download>Download PDF <span aria-hidden="true">↓</span></a>
-  </div>
+  <a class="download-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" download>Download PDF <span aria-hidden="true">↓</span></a>
+</header>
+
+<section class="site-shell cv-summary" aria-label="Curriculum vitae summary">
+  <dl>
+    <div><dt>Current position</dt><dd>Ph.D. candidate, Tsinghua University</dd></div>
+    <div><dt>Field</dt><dd>Management Science and Engineering</dd></div>
+    <div><dt>Research focus</dt><dd>Transport decarbonization and integrated energy systems</dd></div>
+    <div><dt>Contact</dt><dd><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></dd></div>
+  </dl>
 </section>
 
-<section class="section shell cv-frame-wrap">
-  <object class="cv-frame" data="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" type="application/pdf">
-    <p>Your browser cannot display the PDF inline. <a href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}">Download the CV</a>.</p>
-  </object>
+<section class="site-shell cv-viewer" aria-labelledby="cv-preview-heading">
+  <h2 id="cv-preview-heading" class="sr-only">CV preview</h2>
+  <a class="cv-preview-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" aria-label="Open Qi Ding's CV as a PDF">
+    <img src="{{ '/assets/images/qi-ding-cv-preview.webp' | relative_url }}" alt="One-page academic curriculum vitae for Qi Ding" width="1200" height="1696">
+  </a>
 </section>
-

@@ -1,102 +1,110 @@
 ---
 title: "Qi Ding"
 slug: home
-description: "Qi Ding is a Ph.D. candidate at Tsinghua University working on transport decarbonization, integrated energy systems, electric mobility, and climate policy."
+description: "Qi Ding is a Ph.D. candidate at Tsinghua University researching transport decarbonization, integrated energy systems, electric mobility, and climate policy."
 ---
 
-<section class="hero shell">
-  <div class="hero-copy">
-    <p class="eyebrow">Energy · Transport · Climate</p>
-    <h1>Researching how mobility and energy systems can move toward net zero.</h1>
-    <p class="hero-intro">
-      I am <strong>Qi Ding</strong>, a Ph.D. candidate in Management Science and Engineering at
-      Tsinghua University. My work connects transport transitions with power systems,
-      infrastructure planning, and climate policy.
+<section class="site-shell intro" aria-labelledby="intro-name">
+  <aside class="profile-panel" aria-label="Profile summary">
+    <img class="profile-photo" src="{{ '/assets/images/qi-ding-portrait.webp' | relative_url }}" alt="Portrait of Qi Ding" width="520" height="520">
+    <div class="profile-caption">
+      <p><strong>Qi Ding</strong></p>
+      <p>Ph.D. candidate</p>
+      <p>Management Science and Engineering</p>
+    </div>
+    <ul class="profile-details">
+      <li>Tsinghua University</li>
+      <li>Beijing, China</li>
+    </ul>
+  </aside>
+
+  <div class="intro-copy">
+    <p class="section-label">About</p>
+    <h1 id="intro-name">Qi Ding</h1>
+    <p class="intro-role">Ph.D. candidate at the Institute of Energy, Environment, and Economy, Tsinghua University</p>
+    <p>
+      I study how transport and energy systems can transition toward carbon neutrality, with a focus on
+      electric mobility, power-system interactions, and low-carbon fuels.
     </p>
-    <div class="hero-actions">
-      <a class="button button--primary" href="{{ '/publications/' | relative_url }}">Explore publications</a>
-      <a class="button" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}">Download CV <span aria-hidden="true">↓</span></a>
-    </div>
-    <div class="hero-links" aria-label="Profile links">
-      <a href="mailto:dingq23@mails.tsinghua.edu.cn">Email</a>
-      <a href="https://github.com/dingqi01">GitHub</a>
-      <a href="https://ding-qi.top/">Academic site</a>
-    </div>
+    <p>
+      My work combines integrated assessment, optimization, spatial analysis, and data-driven modeling.
+      I aim to connect long-term transition pathways with the operational and infrastructure detail needed
+      for credible policy decisions.
+    </p>
+    <nav class="profile-links" aria-label="Profile links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="{{ site.author.github }}">GitHub</a>
+      <a href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}">CV</a>
+      <a href="{{ site.author.formal_website }}">Website</a>
+    </nav>
   </div>
-  <figure class="portrait-block">
-    <div class="portrait-frame">
-      <img src="{{ '/assets/images/qi-ding.png' | relative_url }}" alt="Portrait of Qi Ding" width="900" height="900">
-    </div>
-    <figcaption>
-      <span>Qi Ding</span>
-      <span>Beijing, China</span>
-    </figcaption>
-  </figure>
 </section>
 
-<section class="section shell" aria-labelledby="research-heading">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Research agenda</p>
-      <h2 id="research-heading">Four connected questions</h2>
-    </div>
-    <p>I combine long-term system models with spatial, operational, and techno-economic evidence.</p>
+<section class="site-shell home-section" aria-labelledby="research-heading">
+  <div class="section-header">
+    <h2 id="research-heading">Research interests</h2>
+    <a href="{{ '/research/' | relative_url }}">Details <span aria-hidden="true">→</span></a>
   </div>
-  <div class="research-grid">
-    {% for area in site.data.research %}
-      <a class="research-card" href="{{ '/research/' | relative_url }}#area-{{ area.number }}">
+  <div class="research-summary">
+    {% for area in site.data.research.areas %}
+      <article>
         <span class="research-number">{{ area.number }}</span>
         <h3>{{ area.title }}</h3>
         <p>{{ area.short }}</p>
-        <span class="card-arrow" aria-hidden="true">↗</span>
-      </a>
+      </article>
     {% endfor %}
   </div>
 </section>
 
-<section class="section section--tint">
-  <div class="shell">
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">Selected work</p>
-        <h2>Publications</h2>
-      </div>
-      <a class="text-link" href="{{ '/publications/' | relative_url }}">View all publications <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="publication-list publication-list--selected">
-      {% for publication in site.data.publications %}
-        {% if publication.selected %}
-          {% include publication-card.html publication=publication %}
-        {% endif %}
-      {% endfor %}
-    </div>
+<section class="site-shell home-section" aria-labelledby="selected-publications-heading">
+  <div class="section-header">
+    <h2 id="selected-publications-heading">Selected publications</h2>
+    <a href="{{ '/publications/' | relative_url }}">All outputs <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="publication-list publication-list--selected">
+    {% for publication in site.data.publications %}
+      {% if publication.selected %}{% include publication-card.html publication=publication compact=true %}{% endif %}
+    {% endfor %}
   </div>
 </section>
 
-<section class="section shell news-section" aria-labelledby="news-heading">
-  <div class="section-heading section-heading--compact">
-    <div>
-      <p class="eyebrow">Updates</p>
-      <h2 id="news-heading">Recent news</h2>
-    </div>
+<section class="site-shell home-section" aria-labelledby="news-heading">
+  <div class="section-header">
+    <h2 id="news-heading">News</h2>
   </div>
   <ol class="news-list">
     {% for item in site.data.news %}
       <li>
         <time>{{ item.date }}</time>
-        <p>
-          {{ item.text }}
-          {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener" aria-label="Read more about this update">↗</a>{% endif %}
-        </p>
+        <p>{{ item.text }}{% if item.url %} <a href="{{ item.url }}" target="_blank" rel="noopener" aria-label="[link]: source for {{ item.text | escape }}">[link]</a>{% endif %}</p>
       </li>
     {% endfor %}
   </ol>
 </section>
 
-<section class="closing-band">
-  <div class="shell closing-grid">
-    <p class="eyebrow">Open to exchange</p>
-    <h2>Interested in transport–energy systems, model coupling, or low-carbon infrastructure?</h2>
-    <a class="button button--light" href="mailto:dingq23@mails.tsinghua.edu.cn">Start a conversation</a>
+<section class="site-shell home-section" aria-labelledby="background-heading">
+  <div class="section-header">
+    <h2 id="background-heading">Background</h2>
+    <a href="{{ '/cv/' | relative_url }}">Full CV <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="background-grid">
+    <div>
+      <h3>Education</h3>
+      {% for item in site.data.experience.education %}
+        <article class="background-item">
+          <time>{{ item.period }}</time>
+          <div><strong>{{ item.institution }}</strong><p>{{ item.role }}</p></div>
+        </article>
+      {% endfor %}
+    </div>
+    <div>
+      <h3>Selected research experience</h3>
+      {% for item in site.data.experience.research %}
+        <article class="background-item">
+          <time>{{ item.period }}</time>
+          <div><strong>{{ item.institution }}</strong><p>{{ item.role }}</p></div>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 </section>

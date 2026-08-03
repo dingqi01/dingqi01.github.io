@@ -1,5 +1,6 @@
 title: "Qi Ding"
-description: "Research on transport decarbonization, integrated energy systems, electric mobility, and low-carbon fuels."
+tagline: "Energy systems, transport decarbonization, and climate policy"
+description: "Qi Ding is a Ph.D. candidate at Tsinghua University researching transport decarbonization, integrated energy systems, electric mobility, and climate policy."
 url: "https://dingqi01.github.io"
 baseurl: ""
 lang: "en"
@@ -7,10 +8,20 @@ timezone: "Asia/Shanghai"
 markdown: kramdown
 permalink: pretty
 
+author:
+  name: "Qi Ding"
+  email: "dingq23@mails.tsinghua.edu.cn"
+  github: "https://github.com/dingqi01"
+  formal_website: "https://ding-qi.top/"
+  affiliation: "Institute of Energy, Environment, and Economy, Tsinghua University"
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - ASSET_SOURCES.md
+  - DESIGN_NOTES.md
+  - assets/fonts/LICENSE-source-sans.md
   - vendor
 
 defaults:
@@ -18,4 +29,3 @@ defaults:
       path: ""
     values:
       layout: default
-
