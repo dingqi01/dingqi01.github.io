@@ -7,33 +7,70 @@ permalink: /research/
 
 <header class="site-shell page-header">
   <p class="section-label">Research</p>
-  <h1>Mobility, energy systems, and the transition to net zero</h1>
-  <p class="page-intro">
-    My research connects long-term transition pathways with operational, spatial, and infrastructure detail.
-    Across the topics below, the common aim is to make model boundaries explicit and transition evidence more useful for decisions.
-  </p>
+  <h1>From transition pathways to system operation</h1>
+  <p class="page-intro">{{ site.data.research.programme.statement }}</p>
 </header>
 
-<section class="site-shell page-section research-details" aria-label="Research areas">
-  {% for area in site.data.research.areas %}
-    <article id="area-{{ area.number }}">
-      <span class="research-number">{{ area.number }}</span>
-      <div>
-        <h2>{{ area.title }}</h2>
-        <p class="research-short">{{ area.short }}</p>
-        <p>{{ area.detail }}</p>
-      </div>
-    </article>
-  {% endfor %}
+<section class="site-shell page-section research-programme" aria-labelledby="programme-heading">
+  <header class="cv-section-header">
+    <p class="section-label">Research programme</p>
+    <h2 id="programme-heading">Three connected levels of analysis</h2>
+    <p>
+      The programme follows decisions from changing end uses to the infrastructure that serves them,
+      then tests how those choices perform within an hourly power system.
+    </p>
+  </header>
+  <ol class="programme-grid">
+    {% for stage in site.data.research.programme.stages %}
+      <li>
+        <p class="programme-number">{{ stage.number }}</p>
+        <p class="programme-short">{{ stage.short }}</p>
+        <h3>{{ stage.title }}</h3>
+        <p>{{ stage.detail }}</p>
+      </li>
+    {% endfor %}
+  </ol>
 </section>
 
-<section class="site-shell page-section methods-section" aria-labelledby="methods-heading">
-  <div class="section-header">
-    <h2 id="methods-heading">Methods</h2>
+<section class="site-shell page-section current-research" aria-labelledby="current-research-heading">
+  <header class="cv-section-header">
+    <p class="section-label">In progress</p>
+    <h2 id="current-research-heading">Current research</h2>
+    <p>
+      Ongoing questions are described without reporting results that have not yet entered the public research record.
+    </p>
+  </header>
+  <div class="current-research-list">
+    {% for item in site.data.research.current %}
+      <article>
+        <div>
+          <p class="current-status">{{ item.status }}</p>
+          <h3>{{ item.title }}</h3>
+        </div>
+        <div>
+          <p>{{ item.question }}</p>
+          <p class="current-methods"><strong>Methods:</strong> {{ item.methods }}</p>
+        </div>
+      </article>
+    {% endfor %}
   </div>
-  <ul class="methods-list">
-    {% for method in site.data.research.methods %}<li>{{ method }}</li>{% endfor %}
-  </ul>
+</section>
+
+<section class="site-shell page-section toolkit-section" aria-labelledby="toolkit-heading">
+  <header class="cv-section-header">
+    <p class="section-label">Models and methods</p>
+    <h2 id="toolkit-heading">Models and analytical toolkit</h2>
+    <p>Specific platforms are listed as research tools, not as stand-alone claims of expertise.</p>
+  </header>
+  <div class="toolkit-list">
+    {% for item in site.data.research.toolkit %}
+      <article>
+        <h3>{{ item.name }}</h3>
+        <p class="toolkit-tools">{{ item.tools }}</p>
+        <p>{{ item.purpose }}</p>
+      </article>
+    {% endfor %}
+  </div>
 </section>
 
 <section class="site-shell page-section research-note" aria-labelledby="approach-heading">
@@ -41,8 +78,8 @@ permalink: /research/
     <h2 id="approach-heading">Research approach</h2>
   </div>
   <p>
-    I use models as structured ways to connect evidence across scales—from national pathways and provincial
-    infrastructure to charging operations and technology choices. The emphasis is on transparent assumptions,
-    traceable data, and comparisons that remain meaningful under uncertainty.
+    I use models as structured ways to connect evidence across scales—from national transition pathways and
+    provincial infrastructure to charging operations and technology choices. The emphasis is on explicit boundaries,
+    traceable data, reproducible scenario comparisons, and conclusions that remain meaningful under uncertainty.
   </p>
 </section>

@@ -9,18 +9,53 @@ permalink: /cv/
   <div>
     <p class="section-label">Curriculum vitae</p>
     <h1>Qi Ding</h1>
-    <p class="page-intro">Education, selected research projects, methods, publications, and recognition.</p>
+    <p class="page-intro">Education, research projects, professional experience, publications, methods, and recognition.</p>
   </div>
-  <a class="download-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" download>Download PDF <span aria-hidden="true">↓</span></a>
+  <a class="download-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" download>Download academic CV <span aria-hidden="true">↓</span></a>
 </header>
 
 <section class="site-shell cv-summary" aria-label="Curriculum vitae summary">
   <dl>
     <div><dt>Current position</dt><dd>Ph.D. candidate, Tsinghua University</dd></div>
     <div><dt>Field</dt><dd>Management Science and Engineering</dd></div>
-    <div><dt>Research focus</dt><dd>Transport decarbonization and integrated energy systems</dd></div>
+    <div><dt>Research focus</dt><dd>End-use transitions, spatial infrastructure, and power-system integration</dd></div>
     <div><dt>Contact</dt><dd><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></dd></div>
   </dl>
+</section>
+
+<section class="site-shell cv-credentials" aria-label="Education and selected honors">
+  <div>
+    <header class="cv-section-header">
+      <p class="section-label">Academic background</p>
+      <h2>Education</h2>
+    </header>
+    <div class="credential-list">
+      {% for item in site.data.experience.education %}
+        <article>
+          <p class="credential-period">{{ item.period }}</p>
+          <div>
+            <h3>{{ item.institution }}</h3>
+            <p>{{ item.role }}</p>
+            <p class="credential-detail">{{ item.detail }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+  <div>
+    <header class="cv-section-header">
+      <p class="section-label">Recognition</p>
+      <h2>Selected honors</h2>
+    </header>
+    <div class="credential-list">
+      {% for item in site.data.experience.awards %}
+        <article>
+          <p class="credential-period">{{ item.period }}</p>
+          <div><h3>{{ item.institution }}</h3></div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 <section class="site-shell cv-projects" aria-labelledby="selected-projects-heading">
@@ -53,13 +88,38 @@ permalink: /cv/
   </div>
 </section>
 
+<section class="site-shell cv-experience" aria-labelledby="professional-experience-heading">
+  <header class="cv-section-header">
+    <p class="section-label">Industry and public-sector practice</p>
+    <h2 id="professional-experience-heading">Selected professional experience</h2>
+    <p>Experience connecting technical analysis with product delivery, industry strategy, and public-sector planning.</p>
+  </header>
+  <div class="cv-experience-list">
+    {% for item in site.data.experience.professional %}
+      <article>
+        <p class="cv-project-period">{{ item.period }}</p>
+        <div>
+          <p class="cv-project-organization">{{ item.institution }}</p>
+          <h3>{{ item.role }}</h3>
+          <p>{{ item.detail }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="site-shell cv-viewer" aria-labelledby="cv-preview-heading">
   <header class="cv-section-header cv-document-header">
-    <p class="section-label">Downloadable document</p>
-    <h2 id="cv-preview-heading">Full curriculum vitae</h2>
-    <p>The one-page PDF mirrors the selected projects and core academic record shown on this site.</p>
+    <p class="section-label">Single maintained document</p>
+    <h2 id="cv-preview-heading">Academic curriculum vitae</h2>
+    <p>This English PDF is the only CV maintained for the site and consolidates the academic and professional record shown above.</p>
   </header>
-  <a class="cv-preview-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" aria-label="Open Qi Ding's CV as a PDF">
-    <img src="{{ '/assets/images/qi-ding-cv-preview.webp' | relative_url }}" alt="One-page academic curriculum vitae for Qi Ding" width="1200" height="1697" loading="lazy" decoding="async">
-  </a>
+  <div class="cv-preview-grid">
+    <a class="cv-preview-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" aria-label="Open Qi Ding's academic CV as a PDF, page one preview">
+      <img src="{{ '/assets/images/qi-ding-cv-preview.webp' | relative_url }}" alt="First page of Qi Ding's academic curriculum vitae" width="1200" height="1697" loading="lazy" decoding="async">
+    </a>
+    <a class="cv-preview-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" aria-label="Open Qi Ding's academic CV as a PDF, page two preview">
+      <img src="{{ '/assets/images/qi-ding-cv-preview-2.webp' | relative_url }}" alt="Second page of Qi Ding's academic curriculum vitae" width="1200" height="1697" loading="lazy" decoding="async">
+    </a>
+  </div>
 </section>

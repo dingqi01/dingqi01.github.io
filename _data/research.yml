@@ -31,10 +31,78 @@ areas:
       interactions among end-use transitions, power systems, climate stress, and long-term policy.
       The emphasis is on transparent boundaries and evidence that can inform real infrastructure decisions.
 
-methods:
-  - "Integrated assessment and energy-system modeling"
-  - "Mathematical optimization and scenario analysis"
-  - "Techno-economic and lifecycle assessment"
-  - "GIS and spatial analysis"
-  - "Data-driven modeling"
-  - "Power-system and transport-model coupling"
+programme:
+  statement: >-
+    I study how low-carbon transitions move from end-use demand and technology pathways,
+    through spatial infrastructure and supply chains, to hourly power-system operation and resilience.
+  stages:
+    - number: "01"
+      title: "End-use transitions"
+      short: "Demand, mobility, and technology pathways"
+      detail: >-
+        I examine how evolving mobility demand, shared autonomous mobility, vehicle technologies,
+        and fleet turnover reshape energy use, emissions, material requirements, and retired-battery availability.
+
+    - number: "02"
+      title: "Infrastructure and supply chains"
+      short: "Production, conversion, transport, and spatial coordination"
+      detail: >-
+        I model where hydrogen and hydrogen-derived fuels could be produced, converted, and moved
+        to demand centers such as ports and airports, while keeping resource, cost, and network constraints explicit.
+
+    - number: "03"
+      title: "Power-system integration and resilience"
+      short: "Hourly operations, flexibility, and climate stress"
+      detail: >-
+        I evaluate how EV charging, smart charging, vehicle-to-grid operation, electrolysis, and extreme-weather
+        conditions interact with generation, storage, transmission, and system adequacy.
+
+current:
+  - status: "Working paper"
+    title: "EV flexibility and power-system resilience under climate stress"
+    question: >-
+      How do historically grounded extreme-weather events alter operational stress in a future power system,
+      and when can smart charging or vehicle-to-grid operation provide credible resilience value?
+    methods: "Climate-stress event construction · fixed-capacity system replay · PyPSA-China"
+
+  - status: "Research in progress"
+    title: "Spatial supply chains for hydrogen-derived fuels"
+    question: >-
+      Where should hydrogen, ammonia, methanol, and sustainable-aviation-fuel equivalents be produced,
+      and how should strategic transport infrastructure evolve as demand changes across China?
+    methods: "GIS · multi-period mixed-integer optimization · techno-economic analysis"
+
+  - status: "Model development"
+    title: "Charging-infrastructure retrofit planning"
+    question: >-
+      How should photovoltaic generation and battery storage be sized across heterogeneous public charging stations,
+      and how do economic and lifecycle-emissions objectives change the preferred deployment strategy?
+    methods: "Station-level data · capacity sizing · lifecycle and techno-economic assessment"
+
+  - status: "Method development"
+    title: "Coupling long-term pathways with hourly power-system analysis"
+    question: >-
+      How can national and provincial transition scenarios be translated into spatially and temporally explicit
+      power-system inputs without losing traceability across model boundaries?
+    methods: "China TIMES · PyPSA-China · Python-based scenario interfaces and quality assurance"
+
+toolkit:
+  - name: "Long-term transition modeling"
+    tools: "China TIMES 2.0 and China TIMES-30PE"
+    purpose: "National and provincial pathways, technology change, and cross-sector interactions."
+
+  - name: "Power-system analysis"
+    tools: "PyPSA-China"
+    purpose: "Hourly system operation, investment, flexibility, and regional coordination."
+
+  - name: "Spatial infrastructure"
+    tools: "GIS and network optimization"
+    purpose: "Node-level demand and supply, transport links, candidate corridors, and regional heterogeneity."
+
+  - name: "Decision models"
+    tools: "Linear and mixed-integer optimization"
+    purpose: "Technology choice, capacity planning, logistics, and operational constraints."
+
+  - name: "Research computing"
+    tools: "Python, GAMS, and reproducible scenario workflows"
+    purpose: "Data preparation, model orchestration, quality assurance, analysis, and visualization."

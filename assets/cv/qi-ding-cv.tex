@@ -1,7 +1,7 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[margin=0.55in]{geometry}
+\usepackage[margin=0.62in]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage[default]{sourcesanspro}
 \usepackage{microtype}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -15,58 +15,77 @@
 
 \definecolor{accent}{HTML}{176E87}
 \definecolor{secondary}{HTML}{5F686F}
-\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-0.45em}\rule{\linewidth}{0.35pt}]
-\titlespacing*{\section}{0pt}{0.58em}{0.28em}
-\setlist[itemize]{leftmargin=1.2em,itemsep=0.09em,topsep=0.12em,parsep=0pt}
+\definecolor{rulegray}{HTML}{CDD4D8}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\vspace{-0.42em}\color{rulegray}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{0.62em}{0.28em}
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.12em,topsep=0.12em,parsep=0pt,partopsep=0pt}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setlength{\emergencystretch}{1em}
 \hypersetup{
   pdftitle={Qi Ding — Academic Curriculum Vitae},
   pdfauthor={Qi Ding},
-  pdfsubject={Energy systems, transport decarbonization, and climate policy}
+  pdfsubject={End-use transitions, spatial infrastructure, and power-system integration},
+  pdfkeywords={energy systems, transport decarbonization, hydrogen, power systems, optimization}
 }
 
 \newcommand{\entry}[3]{%
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
     \textbf{#1} & \textcolor{secondary}{#3} \\
     #2 &
-  \end{tabularx}\vspace{0.05em}}
+  \end{tabularx}\vspace{0.04em}}
 
 \newcommand{\project}[4]{%
-  \item \textbf{#1 --- #2} \hfill \textcolor{secondary}{#4}\\[-0.15em]
+  \item \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1 --- #2} & \textcolor{secondary}{#4}
+  \end{tabularx}\vspace{-0.32em}\\
   \textit{#3}}
+
+\newcommand{\currentitem}[3]{%
+  \item \textbf{#1} \hfill \textcolor{secondary}{#2}\\[-0.2em]
+  #3}
+
+\newcommand{\experience}[4]{%
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} --- #2 & \textcolor{secondary}{#4} \\
+    \multicolumn{2}{@{}p{\dimexpr\linewidth\relax}@{}}{#3}
+  \end{tabularx}\vspace{0.12em}}
 
 \begin{document}
 
 \begin{center}
-  {\LARGE\bfseries Qi Ding}\\[0.18em]
+  {\LARGE\bfseries Qi Ding}\\[0.16em]
   Ph.D. Candidate in Management Science and Engineering\\
   Institute of Energy, Environment, and Economy, Tsinghua University\\[0.2em]
   \href{mailto:dingq23@mails.tsinghua.edu.cn}{dingq23@mails.tsinghua.edu.cn}
   \enspace$\cdot$\enspace
-  \href{https://ding-qi.top/}{ding-qi.top}
+  \href{https://dingqi01.github.io/}{dingqi01.github.io}
   \enspace$\cdot$\enspace
   \href{https://github.com/dingqi01}{github.com/dingqi01}
 \end{center}
+
+\section{Research Profile}
+I study how low-carbon transitions move from end-use demand and technology pathways, through spatial infrastructure and supply chains, to hourly power-system operation and resilience. My work combines integrated assessment, optimization, GIS, and data-driven analysis to connect long-term pathways with operational and infrastructure decisions.
 
 \section{Education}
 \entry{Tsinghua University}{Ph.D. in Management Science and Engineering, Institute of Energy, Environment, and Economy}{2023--present}
 \entry{Tongji University}{B.Eng. in Vehicle Engineering, School of Automotive Studies}{2018--2023}
 
-\section{Research Interests}
-Transport decarbonization and integrated energy systems; electric vehicles, charging, and power-system interactions; hydrogen and low-carbon fuels; optimization and data-driven analysis for energy and climate policy.
-
-\section{Publications}
+\section{Peer-Reviewed Publications}
 \begin{itemize}
   \item \textbf{Ding, Q.}, Ren, J., Zhang, S., \& Chen, W. (2026). The role of shared autonomous electric vehicles in decarbonizing China's passenger transport sector. \textit{Applied Energy}, 422, 128259. \href{https://doi.org/10.1016/j.apenergy.2026.128259}{[DOI]}
   \item \textbf{Ding, Q.}, \& Chen, W. (2026). Retired Battery Supply and Energy Storage Demand in China: A Provincial-Scale Assessment. \textit{Energy Proceedings}, 65. \href{https://doi.org/10.46855/energy-proceedings-12238}{[DOI]}
   \item Chen, W., Zhang, S., Zhang, Q., Ren, J., \& \textbf{Ding, Q.} (2025). Assessing China's Province-Coordinated Power System Carbon-Neutral Transition Pathway. \textit{Journal of Energy and Climate Change}, 1(1), 1--15. \href{https://doi.org/10.3724/j.issn.2097-4981.JECC-2024-0022}{[DOI]}
 \end{itemize}
 
-\section{Manuscript Under Review}
+\section{Preprint and Manuscript}
 \begin{itemize}
-  \item \textbf{Ding, Q.}, et al. Aligning Retired EV-Battery Supply with Grid-Storage Demand through Interprovincial Coordination in China. Manuscript under review at \textit{Applied Energy}.
+  \item Pathak, A., Vishwanathan, S. S., Fujimori, S., et al. (including \textbf{Qi Ding}). Commonalities and differences in national pathways toward net-zero emissions. \textit{Research Square} preprint; revision in progress. \href{https://doi.org/10.21203/rs.3.rs-8802998/v1}{[DOI]}
+  \item \textbf{Ding, Q.}, \& Chen, W. Aligning Retired EV-Battery Supply with Grid-Storage Demand through Interprovincial Coordination in China. Manuscript under review.
 \end{itemize}
 
 \section{Selected Research Projects}
@@ -75,12 +94,45 @@ Transport decarbonization and integrated energy systems; electric vehicles, char
   \project{European Commission, DG CLIMA}{COMMITTED Project}{Research contributor. Multi-model comparison of climate-policy portfolios and transition pathways.}{Sep 2024--present}
   \project{Energy Foundation China}{China Energy System Model Comparison}{Research member. Comparison of model assumptions and decarbonization pathways across energy-system models.}{Sep 2023--present}
   \project{The World Bank Group}{Green China}{Researcher. China TIMES 2.0 analysis of low-carbon power and industry transition pathways.}{Sep 2023--Jun 2024}
-  \project{CNPC Economics \& Technology Research Institute}{Transportation Energy Refueling Facility Upgrade}{Research member. Assessment of multi-energy hubs spanning charging, battery swapping, and hydrogen.}{Jul--Dec 2023}
-  \project{China Automotive Technology and Research Center}{Commercial-Vehicle Carbon-Neutrality Roadmap 1.0}{Core member. Assessed electrification, hydrogen, and biofuels for the clean-energy-supply workstream.}{Oct 2022--Jul 2023}
+  \project{CNPC Economics \& Technology Research Institute}{Transportation-Energy Infrastructure Upgrade}{Research member. Assessment of multi-energy hubs spanning charging, battery swapping, and hydrogen.}{Jul--Dec 2023}
+  \project{CATARC}{Commercial-Vehicle Carbon-Neutrality Roadmap 1.0}{Core member at the China Automotive Technology and Research Center. Assessed electrification, hydrogen, and biofuels for the clean-energy-supply workstream.}{Oct 2022--Jul 2023}
 \end{itemize}
 
-\section{Methods and Skills}
-Integrated assessment, optimization, techno-economic analysis, GIS, and data-driven modeling; Python, GAMS, MATLAB, TIMES, and PyPSA; English (CET-6: 641) and German (Band 6: Excellent).
+\newpage
+
+\section{Current Research}
+\begin{itemize}
+  \currentitem{EV flexibility and power-system resilience under climate stress}{Working paper}{Historically grounded climate-stress events, fixed-capacity power-system replay, smart charging, and vehicle-to-grid operation.}
+  \currentitem{Spatial supply chains for hydrogen-derived fuels}{Research in progress}{GIS-informed multi-period optimization of H$_2$, NH$_3$, methanol, and sustainable-aviation-fuel-equivalent production and transport.}
+  \currentitem{Charging-infrastructure retrofit planning}{Model development}{Station-adaptive photovoltaic and battery sizing under economic and lifecycle-emissions objectives.}
+  \currentitem{Coupling long-term pathways with hourly power-system analysis}{Method development}{Traceable scenario interfaces between China TIMES outputs and spatially and temporally explicit PyPSA-China inputs.}
+\end{itemize}
+
+\section{Selected Professional Experience}
+\experience{Mianyang Municipal SASAC}{Summer Research Intern}{Contributed to preliminary research for the municipal state-owned-enterprise development plan and to analysis of industrial investment and coordination mechanisms.}{Jul--Aug 2025}
+\experience{IM Motors}{Innovation Strategy Intern}{Researched electric-vehicle value chains, technology pathways, and company strategies; synthesized evidence for internal discussions on supply chains and technology investment.}{Sep 2022--Apr 2023}
+\experience{NIO}{Project Management Intern, Software Delivery}{Supported production-vehicle software releases by tracking issues, coordinating development and testing interfaces, and contributing to version-review workflows.}{Sep--Dec 2022}
+
+\section{Selected Presentations}
+\begin{itemize}
+  \item \textbf{Ding, Q.}, et al. Integrating End-Use Flexibility and Climate-Stress Analysis into Sector-Coupled Energy Transition Pathways. Oral presentation, 19th Annual Meeting of the Integrated Assessment Modeling Consortium, 2026.
+  \item \textbf{Ding, Q.}, et al. Operational Resilience Value of EV Flexibility under Historically Grounded Climate Stress. Oral presentation, Tsinghua Heli Anbang Joint Doctoral Academic Forum, 2025.
+  \item \textbf{Ding, Q.}, et al. Economic-Carbon Misalignment in Photovoltaic-Storage Retrofits for 1,000 Public Charging Stations in Beijing. Oral presentation, 20th National Environmental Doctoral Academic Conference, 2025.
+\end{itemize}
+
+\section{Report Contribution}
+\begin{itemize}
+  \item \textbf{Ding, Q.}, et al. China's Fifth National Climate Change Assessment Report: GHG Mitigation Policy Actions and Outcomes. Supporting analysis for the chapter on mitigation-policy actions, sectoral progress, and carbon-neutral transition pathways, 2025.
+\end{itemize}
+
+\section{Models, Methods, and Skills}
+\begin{itemize}
+  \item \textbf{Transition and power-system models:} China TIMES 2.0, China TIMES-30PE, and PyPSA-China.
+  \item \textbf{Decision analysis:} linear and mixed-integer optimization, scenario analysis, and techno-economic assessment.
+  \item \textbf{Spatial and data methods:} GIS, network analysis, lifecycle assessment, and data-driven modeling.
+  \item \textbf{Research computing:} Python, GAMS, MATLAB, Git, and reproducible model and data workflows.
+  \item \textbf{Languages:} English (CET-6: 641) and German (Band 6: Excellent).
+\end{itemize}
 
 \section{Selected Honors}
 National Scholarship (2021, 2022); Shanghai Outstanding Graduate (2023).
