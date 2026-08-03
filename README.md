@@ -35,9 +35,9 @@ For an image, add `image` and a meaningful `image_alt`. Record its source and tr
 
 Edit `_data/projects.yml`. Keep the public list selective: every entry should have a verified period, a conservative role description, a concise statement of Qi Ding's own contribution, and a clear public-disclosure boundary. Add an external link only when it points to an authoritative public project or output page.
 
-The downloadable CV is built from `assets/cv/qi-ding-cv.tex`. When project facts change, update the YAML, the TeX source, the PDF, and its WebP preview together so that the HTML and document do not diverge.
+The downloadable CV is built from `assets/cv/qi-ding-cv.tex`. When project facts change, update the YAML, the TeX source, and the PDF together so that the HTML and document do not diverge.
 
-The site maintains one CV only: a two-page English academic CV. Do not create separate one-page, full, Chinese, or English variants in this repository. The two WebP files are page previews of the same PDF, not separate documents.
+The site maintains one CV only: a two-page English academic CV. Do not create separate one-page, full, Chinese, or English variants in this repository. The web CV provides the readable page view, while the header offers the maintained PDF as a direct download; the PDF is not duplicated as page previews.
 
 ## Update current research
 
