@@ -11,6 +11,7 @@ This site is separate from [ding-qi.top](https://ding-qi.top/). It does not shar
 - `publications.html`: verified outputs grouped by publication status
 - `cv.html`: academic CV summary, download, and preview
 - `_data/publications.yml`: publication metadata, status, links, and image descriptions
+- `_data/projects.yml`: selected research projects, roles, periods, methods, and public links
 - `_data/research.yml`: research areas and methods
 - `_data/news.yml`: dated homepage updates
 - `_data/experience.yml`: education, research experience, and recognition
@@ -29,6 +30,12 @@ Edit `_data/publications.yml`. Use one of these groups:
 Always verify the title, author order, status, venue, year, and public links against a publisher page, DOI record, preprint page, final paper, or other authoritative source. Do not describe a preprint or working paper as published.
 
 For an image, add `image` and a meaningful `image_alt`. Record its source and transformation in `ASSET_SOURCES.md`. A text-only row is preferable to an unrelated or decorative placeholder.
+
+## Add or update a project
+
+Edit `_data/projects.yml`. Keep the public list selective: every entry should have a verified period, a conservative role description, a concise statement of Qi Ding's own contribution, and a clear public-disclosure boundary. Add an external link only when it points to an authoritative public project or output page.
+
+The downloadable CV is built from `assets/cv/qi-ding-cv.tex`. When project facts change, update the YAML, the TeX source, the PDF, and its WebP preview together so that the HTML and document do not diverge.
 
 ## Local preview
 

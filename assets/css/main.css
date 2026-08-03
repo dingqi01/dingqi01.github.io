@@ -745,8 +745,114 @@ strong {
   overflow-wrap: anywhere;
 }
 
+.cv-projects {
+  padding-block: 1rem 2.8rem;
+}
+
+.cv-section-header {
+  max-width: 760px;
+  margin-bottom: 1.25rem;
+}
+
+.cv-section-header .section-label {
+  margin-bottom: 0.35rem;
+}
+
+.cv-section-header h2 {
+  margin-bottom: 0.55rem;
+}
+
+.cv-section-header > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.cv-project-list {
+  border-top: 1px solid var(--line-strong);
+}
+
+.cv-project-item {
+  display: grid;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 1.35rem;
+}
+
+.cv-project-period {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.cv-project-organization {
+  margin-bottom: 0.22rem;
+  color: var(--muted);
+  font-size: 0.79rem;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.cv-project-copy h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.12rem;
+}
+
+.cv-project-role,
+.cv-project-summary,
+.cv-project-methods,
+.cv-project-links {
+  margin-bottom: 0;
+  font-size: 0.91rem;
+  line-height: 1.45;
+}
+
+.cv-project-role {
+  margin-bottom: 0.45rem;
+  color: var(--quiet);
+  font-style: italic;
+}
+
+.cv-project-summary {
+  max-width: 680px;
+}
+
+.cv-project-methods {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.cv-project-methods strong {
+  color: var(--quiet);
+  font-weight: 620;
+}
+
+.cv-project-links {
+  display: flex;
+  margin-top: 0.45rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+}
+
+.cv-project-links a {
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .cv-viewer {
   padding-bottom: 3rem;
+  border-top: 1px solid var(--line);
+}
+
+.cv-document-header {
+  padding-top: 2.5rem;
 }
 
 .cv-preview-link {
@@ -1076,6 +1182,11 @@ strong {
     gap: 0.75rem;
   }
 
+  .cv-project-item {
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
   .cv-preview-link {
     padding: 0.45rem;
   }
@@ -1115,6 +1226,16 @@ strong {
   .cv-summary dl > div {
     grid-template-columns: 1fr;
     gap: 0.1rem;
+  }
+
+  .cv-project-item {
+    padding: 1.1rem 0;
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .cv-project-copy h3 {
+    font-size: 1.05rem;
   }
 }
 

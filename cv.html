@@ -9,7 +9,7 @@ permalink: /cv/
   <div>
     <p class="section-label">Curriculum vitae</p>
     <h1>Qi Ding</h1>
-    <p class="page-intro">Education, research experience, methods, selected publications, and recognition.</p>
+    <p class="page-intro">Education, selected research projects, methods, publications, and recognition.</p>
   </div>
   <a class="download-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" download>Download PDF <span aria-hidden="true">↓</span></a>
 </header>
@@ -23,9 +23,43 @@ permalink: /cv/
   </dl>
 </section>
 
+<section class="site-shell cv-projects" aria-labelledby="selected-projects-heading">
+  <header class="cv-section-header">
+    <p class="section-label">Applied and collaborative research</p>
+    <h2 id="selected-projects-heading">Selected research projects</h2>
+    <p>Institutional projects connecting energy-system modeling with policy, technology, and infrastructure decisions.</p>
+  </header>
+
+  <div class="cv-project-list">
+    {% for project in site.data.projects %}
+      <article class="cv-project-item">
+        <p class="cv-project-period">{{ project.period }}</p>
+        <div class="cv-project-copy">
+          <p class="cv-project-organization">{{ project.organization }}</p>
+          <h3>{{ project.title }}</h3>
+          <p class="cv-project-role">{{ project.role }}</p>
+          <p class="cv-project-summary">{{ project.summary }}</p>
+          <p class="cv-project-methods"><strong>Methods:</strong> {{ project.methods }}</p>
+          {% if project.links %}
+            <p class="cv-project-links">
+              {% for link in project.links %}
+                <a href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>
+              {% endfor %}
+            </p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="site-shell cv-viewer" aria-labelledby="cv-preview-heading">
-  <h2 id="cv-preview-heading" class="sr-only">CV preview</h2>
+  <header class="cv-section-header cv-document-header">
+    <p class="section-label">Downloadable document</p>
+    <h2 id="cv-preview-heading">Full curriculum vitae</h2>
+    <p>The one-page PDF mirrors the selected projects and core academic record shown on this site.</p>
+  </header>
   <a class="cv-preview-link" href="{{ '/assets/cv/qi-ding-cv.pdf' | relative_url }}" aria-label="Open Qi Ding's CV as a PDF">
-    <img src="{{ '/assets/images/qi-ding-cv-preview.webp' | relative_url }}" alt="One-page academic curriculum vitae for Qi Ding" width="1200" height="1696">
+    <img src="{{ '/assets/images/qi-ding-cv-preview.webp' | relative_url }}" alt="One-page academic curriculum vitae for Qi Ding" width="1200" height="1697" loading="lazy" decoding="async">
   </a>
 </section>
