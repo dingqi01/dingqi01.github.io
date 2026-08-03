@@ -1,0 +1,110 @@
+- id: shared-autonomous-ev
+  year: 2026
+  type: journal
+  label: "Journal article"
+  selected: true
+  title: "The role of shared autonomous electric vehicles in decarbonizing China's passenger transport sector"
+  authors: "Qi Ding, Jinhui Ren, Shu Zhang, and Wenying Chen"
+  venue: "Applied Energy, 422, 128259"
+  abstract: "A China TIMES 2.0 assessment of how shared autonomous electric vehicles could reshape fleet size, energy use, material demand, and upstream emissions."
+  image: "/assets/images/publications/shared-mobility.svg"
+  links:
+    - label: "Paper"
+      url: "https://www.sciencedirect.com/science/article/pii/S030626192600913X"
+    - label: "DOI"
+      url: "https://doi.org/10.1016/j.apenergy.2026.128259"
+- id: retired-battery
+  year: 2026
+  type: conference
+  label: "Conference paper"
+  selected: true
+  title: "Retired Battery Supply and Energy Storage Demand in China: A Provincial-Scale Assessment"
+  authors: "Qi Ding and Wenying Chen"
+  venue: "Energy Proceedings, 65"
+  abstract: "A provincial-scale assessment of the spatial and temporal mismatch between retired electric-vehicle batteries and stationary storage demand."
+  image: "/assets/images/publications/battery-circularity.svg"
+  links:
+    - label: "Paper"
+      url: "https://www.energy-proceedings.org/retired-battery-supply-and-energy-storage-demand-in-china%3A-a-provincial-scale-assessment/"
+    - label: "DOI"
+      url: "https://doi.org/10.46855/energy-proceedings-12238"
+- id: province-coordinated-power
+  year: 2025
+  type: journal
+  label: "Journal article"
+  selected: true
+  title: "Assessing China's Province-Coordinated Power System Carbon-Neutral Transition Pathway"
+  authors: "Wenying Chen, Shu Zhang, Qiang Zhang, Jinhui Ren, and Qi Ding"
+  venue: "Journal of Energy and Climate Change, 1(1), 1–15"
+  abstract: "A coordinated provincial transition assessment spanning renewable deployment, interprovincial transmission, storage, and investment needs."
+  image: "/assets/images/publications/provincial-grid.svg"
+  links:
+    - label: "Paper"
+      url: "https://zhang-shu.top/assets/pdf/JECC2025.pdf"
+    - label: "DOI"
+      url: "https://doi.org/10.3724/j.issn.2097-4981.JECC-2024-0022"
+- id: net-zero-commonalities
+  year: 2026
+  type: preprint
+  label: "Preprint"
+  status: "In revision"
+  selected: false
+  title: "Commonalities and differences in national pathways toward net-zero emissions"
+  authors: "Anuj Pathak, Saritha Sudharmma Vishwanathan, Shinichiro Fujimori, et al. (including Qi Ding)"
+  venue: "Research Square"
+  abstract: "A comparison of national net-zero scenarios for 23 countries and 38 models developed under a common protocol."
+  links:
+    - label: "Preprint"
+      url: "https://www.researchsquare.com/article/rs-8802998/v1"
+    - label: "DOI"
+      url: "https://doi.org/10.21203/rs.3.rs-8802998/v1"
+- id: battery-coordination
+  year: 2026
+  type: working-paper
+  label: "Working paper"
+  status: "Under review"
+  selected: false
+  title: "Aligning Retired EV-Battery Supply with Grid-Storage Demand through Interprovincial Coordination in China"
+  authors: "Qi Ding et al."
+  venue: "Manuscript under review"
+  abstract: "An assessment of how interprovincial coordination can improve second-life battery utilization across China."
+- id: sector-coupled-iamc
+  year: 2026
+  type: conference
+  label: "Oral presentation"
+  selected: false
+  title: "Integrating End-Use Flexibility and Climate-Stress Analysis into Sector-Coupled Energy Transition Pathways"
+  authors: "Qi Ding et al."
+  venue: "19th Annual Meeting of the Integrated Assessment Modeling Consortium"
+  abstract: "A coupled framework connecting long-term transitions, end-use flexibility, climate stress, and high-resolution power-system analysis."
+  links:
+    - label: "Conference"
+      url: "https://www.iamconsortium.org/event/nineteenth-iamc-annual-meeting-2026/"
+- id: ev-climate-resilience
+  year: 2025
+  type: conference
+  label: "Oral presentation"
+  selected: false
+  title: "Operational Resilience Value of EV Flexibility under Historically Grounded Climate Stress"
+  authors: "Qi Ding et al."
+  venue: "Tsinghua Heli Anbang Joint Doctoral Academic Forum"
+  abstract: "An operational assessment of electric-vehicle flexibility under historically grounded climate stress."
+- id: pv-storage-charging
+  year: 2025
+  type: conference
+  label: "Oral presentation"
+  selected: false
+  title: "Economic-Carbon Misalignment in Photovoltaic-Storage Retrofits for 1,000 Public Charging Stations in Beijing"
+  authors: "Qi Ding et al."
+  venue: "20th National Environmental Doctoral Academic Conference"
+  abstract: "An empirical assessment of economic and carbon-performance trade-offs in photovoltaic-storage charging-station retrofits."
+- id: national-climate-assessment
+  year: 2025
+  type: report
+  label: "Report contribution"
+  selected: false
+  title: "China's Fifth National Climate Change Assessment Report: GHG Mitigation Policy Actions and Outcomes"
+  authors: "Qi Ding et al."
+  venue: "China's Fifth National Climate Change Assessment Report"
+  abstract: "Supporting analysis for the chapter on mitigation policy actions, sectoral progress, and carbon-neutral transition pathways."
+

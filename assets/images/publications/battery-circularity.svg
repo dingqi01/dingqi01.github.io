@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Battery circularity across provinces</title>
+  <desc id="desc">An original abstract diagram showing retired vehicle batteries flowing toward stationary storage across a network.</desc>
+  <rect width="800" height="500" fill="#edf1ef"/>
+  <g stroke="#9aa9a2" stroke-width="3">
+    <path d="M105 135 260 215 410 100 565 205 700 120" fill="none"/>
+    <path d="M105 135 200 370 410 100 430 375 700 120" fill="none"/>
+    <path d="M260 215 430 375 565 205 640 370" fill="none"/>
+  </g>
+  <g fill="#fff" stroke="#171717" stroke-width="4">
+    <circle cx="105" cy="135" r="28"/><circle cx="260" cy="215" r="24"/><circle cx="410" cy="100" r="26"/><circle cx="565" cy="205" r="25"/><circle cx="700" cy="120" r="22"/><circle cx="200" cy="370" r="25"/><circle cx="430" cy="375" r="29"/><circle cx="640" cy="370" r="24"/>
+  </g>
+  <g transform="translate(315 205)">
+    <rect width="170" height="112" rx="4" fill="#651c3e"/>
+    <rect x="170" y="35" width="18" height="42" fill="#651c3e"/>
+    <path d="m89 18-31 47h30L70 98l49-53H90l18-27Z" fill="#fff"/>
+  </g>
+  <path d="M260 173c15-90 125-100 163-59" fill="none" stroke="#651c3e" stroke-width="7"/>
+  <path d="m401 89 27 29-38 8" fill="none" stroke="#651c3e" stroke-width="7"/>
+  <path d="M552 265c-20 85-124 107-168 68" fill="none" stroke="#651c3e" stroke-width="7"/>
+  <path d="m407 360-30-28 37-10" fill="none" stroke="#651c3e" stroke-width="7"/>
+  <text x="40" y="62" fill="#171717" font-family="Arial, sans-serif" font-size="25" font-weight="700">BATTERY CIRCULARITY</text>
+  <text x="40" y="94" fill="#651c3e" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">SUPPLY · DEMAND · COORDINATION</text>
+</svg>
+

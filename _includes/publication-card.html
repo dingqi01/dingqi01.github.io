@@ -1,0 +1,28 @@
+{% assign p = include.publication %}
+{% assign primary_link = p.links | first %}
+<article class="publication-card{% unless p.image %} publication-card--text{% endunless %}" data-year="{{ p.year }}" data-type="{{ p.type }}">
+  {% if p.image %}
+    <a class="publication-visual" href="{{ primary_link.url | default: '/publications/' }}"{% if primary_link.url %} target="_blank" rel="noopener"{% endif %} tabindex="-1" aria-hidden="true">
+      <img src="{{ p.image | relative_url }}" alt="" loading="lazy" width="640" height="400">
+    </a>
+  {% endif %}
+  <div class="publication-copy">
+    <div class="publication-meta">
+      <span>{{ p.year }}</span>
+      <span>{{ p.label }}</span>
+      {% if p.status %}<span>{{ p.status }}</span>{% endif %}
+    </div>
+    <h3>{{ p.title }}</h3>
+    {% assign formatted_authors = p.authors | replace: 'Qi Ding', '<strong>Qi Ding</strong>' %}
+    <p class="publication-authors">{{ formatted_authors }}</p>
+    <p class="publication-venue">{{ p.venue }}</p>
+    {% if p.abstract %}<p class="publication-abstract">{{ p.abstract }}</p>{% endif %}
+    {% if p.links %}
+      <div class="publication-links" aria-label="Links for {{ p.title | escape }}">
+        {% for link in p.links %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} <span aria-hidden="true">↗</span></a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

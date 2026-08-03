@@ -1,0 +1,29 @@
+- number: "01"
+  title: "Transport decarbonization"
+  short: "Pathways for low-carbon mobility across technologies, fuels, infrastructure, and policy."
+  detail: >-
+    I study how passenger and freight transport can transition toward net-zero emissions,
+    with attention to technology adoption, energy demand, material implications, and the
+    system-wide effects of mobility change.
+- number: "02"
+  title: "Electric mobility & power systems"
+  short: "Charging, V2G, flexibility, and resilience at the transport–power interface."
+  detail: >-
+    This work connects electric-vehicle behavior and charging infrastructure with power-system
+    operations and planning, asking when flexible charging can create reliable and measurable
+    system value.
+- number: "03"
+  title: "Hydrogen & low-carbon fuels"
+  short: "Infrastructure and fuel choices for harder-to-electrify transport applications."
+  detail: >-
+    I evaluate hydrogen and hydrogen-derived fuels for ports, airports, and long-distance
+    transport, combining spatial infrastructure analysis with techno-economic and policy
+    assessment.
+- number: "04"
+  title: "Integrated energy & climate policy"
+  short: "Model coupling and evidence for robust transition decisions under uncertainty."
+  detail: >-
+    I develop and connect optimization, integrated assessment, and data-driven models to
+    examine interactions among end-use transitions, power systems, climate stress, and
+    long-term policy choices.
+

@@ -1,0 +1,36 @@
+---
+title: "Publications"
+slug: publications
+description: "Publications and presentations by Qi Ding on transport, energy systems, electric mobility, hydrogen, and climate policy."
+permalink: /publications/
+---
+
+<section class="page-hero shell page-hero--split">
+  <div>
+    <p class="eyebrow">Publications</p>
+    <h1>Research outputs and ongoing work.</h1>
+  </div>
+  <p class="page-lead">
+    Selected journal articles, conference papers, reports, and work in progress. For the most
+    current citation record, see <a href="https://scholar.google.com/citations?user=xFmQpf4AAAAJ&hl=en">Google Scholar</a>.
+  </p>
+</section>
+
+<section class="section shell publications-section">
+  <div class="publication-toolbar" aria-label="Filter publications">
+    <button class="filter-button is-active" type="button" data-filter="all">All</button>
+    <button class="filter-button" type="button" data-filter="journal">Journal</button>
+    <button class="filter-button" type="button" data-filter="conference">Conference</button>
+    <button class="filter-button" type="button" data-filter="preprint">Preprint</button>
+    <button class="filter-button" type="button" data-filter="working-paper">Working paper</button>
+    <button class="filter-button" type="button" data-filter="report">Report</button>
+  </div>
+  <div class="publication-list" data-publication-list>
+    {% assign publications = site.data.publications | sort: "year" | reverse %}
+    {% for publication in publications %}
+      {% include publication-card.html publication=publication %}
+    {% endfor %}
+  </div>
+  <p class="filter-empty" data-filter-empty hidden>No publications match this filter.</p>
+</section>
+

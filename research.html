@@ -1,0 +1,55 @@
+---
+title: "Research"
+slug: research
+description: "Research themes spanning transport decarbonization, electric mobility, hydrogen, integrated energy systems, and climate policy."
+permalink: /research/
+---
+
+<section class="page-hero shell">
+  <p class="eyebrow">Research</p>
+  <h1>Systems questions at the intersection of mobility, energy, and climate.</h1>
+  <p class="page-lead">
+    My research examines transitions that cross conventional sector boundaries. The common
+    objective is to connect long-term pathways with operational and spatial detail—so that
+    decarbonization strategies remain credible when infrastructure, behavior, and uncertainty matter.
+  </p>
+</section>
+
+<section class="section shell research-detail-list">
+  {% for area in site.data.research %}
+    <article id="area-{{ area.number }}" class="research-detail">
+      <span class="research-number">{{ area.number }}</span>
+      <div>
+        <h2>{{ area.title }}</h2>
+        <p class="research-detail-short">{{ area.short }}</p>
+        <p>{{ area.detail }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</section>
+
+<section class="methods-band">
+  <div class="shell methods-grid">
+    <div>
+      <p class="eyebrow">Methods</p>
+      <h2>From pathways to operations</h2>
+    </div>
+    <ul class="method-list">
+      <li>Integrated assessment and energy-system modeling</li>
+      <li>Mathematical optimization and scenario analysis</li>
+      <li>Techno-economic and lifecycle assessment</li>
+      <li>GIS, spatial analysis, and data-driven modeling</li>
+      <li>Power-system and transport-model coupling</li>
+      <li>Climate-stress and robustness analysis</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section shell research-principle">
+  <p class="eyebrow">Working principle</p>
+  <blockquote>
+    Models are most useful when their boundaries are explicit, their evidence is traceable,
+    and their results can be connected to real infrastructure and policy decisions.
+  </blockquote>
+</section>
+

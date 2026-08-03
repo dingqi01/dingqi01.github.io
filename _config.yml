@@ -1,0 +1,21 @@
+title: "Qi Ding"
+description: "Research on transport decarbonization, integrated energy systems, electric mobility, and low-carbon fuels."
+url: "https://dingqi01.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Asia/Shanghai"
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+

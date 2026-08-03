@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Coordinated provincial power transition</title>
+  <desc id="desc">An original abstract diagram of connected provincial energy nodes, renewable generation, storage, and transmission.</desc>
+  <rect width="800" height="500" fill="#f3f0e8"/>
+  <g fill="none" stroke="#b9b3a4" stroke-width="4">
+    <path d="M120 330 240 190 390 305 520 145 680 285"/>
+    <path d="M120 330 390 305 680 285"/>
+    <path d="M240 190 520 145"/>
+  </g>
+  <g fill="#fff" stroke="#171717" stroke-width="4">
+    <circle cx="120" cy="330" r="34"/><circle cx="240" cy="190" r="38"/><circle cx="390" cy="305" r="40"/><circle cx="520" cy="145" r="36"/><circle cx="680" cy="285" r="38"/>
+  </g>
+  <g stroke="#651c3e" stroke-width="5" fill="none">
+    <path d="M90 330h60M120 300v60"/>
+    <path d="M215 190h50M240 165v50"/>
+    <path d="M360 305h60M390 275v60"/>
+    <path d="M494 145h52M520 119v52"/>
+    <path d="M650 285h60M680 255v60"/>
+  </g>
+  <g transform="translate(325 80)" fill="#651c3e">
+    <path d="m42 0 18 58H24Z"/>
+    <rect x="38" y="55" width="8" height="75"/>
+    <path d="M0 130h84" stroke="#651c3e" stroke-width="6"/>
+  </g>
+  <g transform="translate(560 325)">
+    <rect width="92" height="66" fill="#651c3e"/>
+    <rect x="92" y="21" width="12" height="25" fill="#651c3e"/>
+    <path d="m48 10-18 28h18L38 57l28-31H50l10-16Z" fill="#fff"/>
+  </g>
+  <text x="40" y="62" fill="#171717" font-family="Arial, sans-serif" font-size="25" font-weight="700">COORDINATED TRANSITION</text>
+  <text x="40" y="94" fill="#651c3e" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">PROVINCES · GRID · STORAGE</text>
+</svg>
+
