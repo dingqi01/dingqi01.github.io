@@ -3,7 +3,7 @@
 <article class="publication-card{% unless p.image %} publication-card--text{% endunless %}" data-year="{{ p.year }}" data-type="{{ p.type }}">
   {% if p.image %}
     <a class="publication-visual" href="{{ primary_link.url | default: '/publications/' }}"{% if primary_link.url %} target="_blank" rel="noopener"{% endif %} tabindex="-1" aria-hidden="true">
-      <img src="{{ p.image | relative_url }}" alt="" loading="lazy" width="640" height="400">
+      <img src="{{ p.image | relative_url }}" alt="" width="640" height="400">
     </a>
   {% endif %}
   <div class="publication-copy">
