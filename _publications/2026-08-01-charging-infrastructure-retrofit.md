@@ -5,7 +5,8 @@ category: wip
 permalink: /publication/charging-infrastructure-retrofit
 excerpt: "How should photovoltaic generation and battery storage be sized across heterogeneous public charging stations, and how do economic and lifecycle-emissions objectives change the preferred deployment strategy?"
 date: 2026-08-01
-venue: "Model development"
+venue_note: "Model development"
+nolink: true
 citation: "Ding, Q. (in progress). &quot;Charging-infrastructure retrofit planning.&quot;"
 ---
 {% include base_path %}
