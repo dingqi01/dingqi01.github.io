@@ -4,8 +4,7 @@ title: "CV"
 author_profile: true
 ---
 
-A two-page English academic CV is maintained in LaTeX and available as PDF:
-[Download CV (PDF)](/assets/cv/qi-ding-cv.pdf).
+Curriculum Vitae — [Download PDF](/assets/cv/qi-ding-cv.pdf).
 
 ## Education
 

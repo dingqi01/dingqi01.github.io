@@ -5,18 +5,23 @@ author_profile: true
 ---
 
 I am a Ph.D. candidate in Management Science and Engineering at the Institute of
-Energy, Environment, and Economy, Tsinghua University. My research focuses on
-transport-energy system modeling, with particular interests in China's transport
-decarbonization pathways, electric vehicle charging and power system interactions,
-and hydrogen-based fuels for ports and airports.
+Energy, Environment, and Economy, Tsinghua University. I build and solve large-scale
+optimization models of power and energy systems, combining mathematical programming
+with data-driven methods.
 
-I work on techno-economic analysis and integrated assessment using optimization
-and data-driven methods to study how low-carbon transport transitions interact
-with power systems, infrastructure planning, and climate policy.
+My work centers on system-level optimization problems:
 
-My work connects long-term pathways with spatial planning and operational
-resilience — from end-use demand and technology pathways, through spatial
-infrastructure and supply chains, to hourly power-system operation.
+- **Large-scale optimization**: linear and mixed-integer programming for energy
+  system planning, capacity expansion, and operational scheduling
+- **Power systems**: hourly operations, investment, flexibility, and regional
+  coordination, modeled at provincial and national scale
+- **Spatial infrastructure**: mixed-integer models of production, conversion, and
+  transport networks for energy carriers
+- **Model development**: formulation, decomposition, and efficient solution of
+  large instances, with reproducible workflows in Python, GAMS, and PyPSA-China
+
+I care about the mathematics, the computational tractability, and the credibility
+of the solution — not just the story around it.
 
 ## News
 

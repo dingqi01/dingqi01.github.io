@@ -1,7 +1,7 @@
 areas:
   - number: "01"
-    title: "Transport decarbonization"
-    short: "Technology, fuel, infrastructure, and policy pathways for low-carbon passenger and freight mobility."
+    title: "Transport energy systems"
+    short: "Large-scale optimization of technology, fuel, and infrastructure choices for passenger and freight mobility."
     detail: >-
       I study how transport demand, vehicle technologies, energy carriers, and infrastructure
       evolve together on the path to net-zero emissions. The work considers not only direct
@@ -24,8 +24,8 @@ areas:
       production, transport, and demand can be coordinated effectively.
 
   - number: "04"
-    title: "Integrated energy and climate policy"
-    short: "Model coupling and traceable evidence for transition decisions under uncertainty."
+    title: "Energy systems modeling and optimization"
+    short: "Formulation, decomposition, and efficient solution of coupled large-scale system models."
     detail: >-
       I develop and connect optimization, integrated-assessment, and data-driven models to examine
       interactions among end-use transitions, power systems, climate stress, and long-term policy.
@@ -33,8 +33,9 @@ areas:
 
 programme:
   statement: >-
-    I study how low-carbon transitions move from end-use demand and technology pathways,
-    through spatial infrastructure and supply chains, to hourly power-system operation and resilience.
+    I develop and solve large-scale optimization models of power and energy systems.
+    The emphasis is on mathematical formulation, solution methods, and computational
+    tractability for planning, operations, and infrastructure problems.
   stages:
     - number: "01"
       title: "End-use transitions"
