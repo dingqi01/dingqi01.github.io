@@ -1,31 +1,128 @@
-title: "Qi Ding"
-tagline: "Energy systems, transport decarbonization, and climate policy"
-description: "Qi Ding is a Ph.D. candidate at Tsinghua University researching transport decarbonization, integrated energy systems, electric mobility, and climate policy."
-url: "https://dingqi01.github.io"
-baseurl: ""
-lang: "en"
-timezone: "Asia/Shanghai"
-markdown: kramdown
-permalink: pretty
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Qi Ding"
+title_separator          : "-"
+name                     : &name "Qi Ding"
+description              : "Qi Ding — research on energy, transport, and climate systems"
+url                      : https://dingqi01.github.io
+baseurl                  : ""
+repository               : "dingqi01/dingqi01.github.io"
 
+# Site Author
 author:
-  name: "Qi Ding"
-  email: "dingq23@mails.tsinghua.edu.cn"
-  github: "https://github.com/dingqi01"
-  formal_website: "https://ding-qi.top/"
-  affiliation: "Institute of Energy, Environment, and Economy, Tsinghua University"
+  avatar           : "qi-ding-portrait.webp"
+  name             : "Qi Ding"
+  bio              : "Ph.D. candidate in Management Science and Engineering at Tsinghua University, studying transport decarbonization, integrated energy systems, electric mobility, and climate policy."
+  location         : "Beijing, China"
+  employer         : "Tsinghua University"
+  email            : "dingq23@mails.tsinghua.edu.cn"
+  googlescholar    : "https://scholar.google.com/citations?user=xFmQpf4AAAAJ"
+  github           : "dingqi01"
+  twitter          : "kevin_ding_2001"
+  orcid            : ""
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - ASSET_SOURCES.md
-  - DESIGN_NOTES.md
-  - assets/fonts/LICENSE-source-sans.md
-  - vendor
+# Academic Pages settings
+analytics:
+  provider               : ""
 
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dingqi01"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=xFmQpf4AAAAJ"
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
 defaults:
   - scope:
       path: ""
+      type: publications
     values:
-      layout: default
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: false
+  - scope:
+      path: "_pages"
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+
+# Publication categories for the /publications/ page
+publication_category:
+  peer-reviewed: { title: "Journal Articles" }
+  manuscripts: { title: "Working Papers" }
+  presentations: { title: "Presentations" }
+  reports: { title: "Reports" }
+  wip: { title: "Work in Progress" }
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Exclude
+exclude:
+  - "*.tex"
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - ASSET_SOURCES.md
+  - DESIGN_NOTES.md
+  - vendor
+
+# Kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
