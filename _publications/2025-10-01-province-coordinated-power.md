@@ -10,7 +10,7 @@ paperurl: "https://zhang-shu.top/assets/pdf/JECC2025.pdf"
 citation: "Chen, W., Zhang, S., Zhang, Q., Ren, J., and Ding, Q. (2025). &quot;Assessing China's Province-Coordinated Power System Carbon-Neutral Transition Pathway.&quot; <i>Journal of Energy and Climate Change</i>, 1(1), 1–15."
 selected: true
 header:
-  teaser: "/images/province-power-dispatch.webp"
+  teaser: "province-power-dispatch.webp"
 ---
 {% include base_path %}
 DOI: <a href="https://doi.org/10.3724/j.issn.2097-4981.JECC-2024-0022">10.3724/j.issn.2097-4981.JECC-2024-0022</a>

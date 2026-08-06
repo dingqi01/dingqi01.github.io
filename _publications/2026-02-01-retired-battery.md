@@ -10,7 +10,7 @@ paperurl: "https://www.energy-proceedings.org/retired-battery-supply-and-energy-
 citation: "Ding, Q., and Chen, W. (2026). &quot;Retired Battery Supply and Energy Storage Demand in China: A Provincial-Scale Assessment.&quot; <i>Energy Proceedings</i>, Vol. 65."
 selected: true
 header:
-  teaser: "/images/retired-battery-balance.webp"
+  teaser: "retired-battery-balance.webp"
 ---
 {% include base_path %}
 DOI: <a href="https://doi.org/10.46855/energy-proceedings-12238">10.46855/energy-proceedings-12238</a>
