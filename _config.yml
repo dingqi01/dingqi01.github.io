@@ -83,7 +83,8 @@ defaults:
       author_profile: true
       share: false
   - scope:
-      path: "_pages"
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
