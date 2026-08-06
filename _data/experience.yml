@@ -1,0 +1,48 @@
+education:
+  - period: "2023 — present"
+    institution: "Tsinghua University"
+    role: "Ph.D. candidate, Management Science and Engineering"
+    detail: "Institute of Energy, Environment, and Economy"
+  - period: "2018 — 2023"
+    institution: "Tongji University"
+    role: "B.Eng., Vehicle Engineering"
+    detail: "Shanghai, China"
+research:
+  - period: "Nov 2024 — present"
+    institution: "National Key R&D Program of China"
+    role: "Core member — CCUS technology assessment"
+    detail: "Technology assessment and carbon-neutral transition research"
+  - period: "Sep 2024 — present"
+    institution: "European Commission, DG CLIMA"
+    role: "Research contributor — COMMITTED project"
+    detail: "International climate-policy and transition pathways"
+  - period: "Sep 2023 — Jun 2024"
+    institution: "The World Bank Group"
+    role: "Researcher — Green China project"
+    detail: "Policy and transition research"
+professional:
+  - period: "Jul 2025 — Aug 2025"
+    institution: "Mianyang Municipal SASAC"
+    role: "Summer Research Intern"
+    detail: >-
+      Contributed to preliminary research for the municipal state-owned-enterprise development plan and to analysis
+      of industrial investment and coordination mechanisms.
+  - period: "Sep 2022 — Apr 2023"
+    institution: "IM Motors"
+    role: "Innovation Strategy Intern"
+    detail: >-
+      Researched electric-vehicle value chains, technology pathways, and company strategies;
+      synthesized evidence for internal discussions on supply chains and technology investment.
+  - period: "Sep 2022 — Dec 2022"
+    institution: "NIO"
+    role: "Project Management Intern — software delivery"
+    detail: >-
+      Supported production-vehicle software releases by tracking issues, coordinating development and testing interfaces,
+      and contributing to version-review workflows.
+awards:
+  - period: "2023"
+    institution: "Shanghai Outstanding Graduate"
+  - period: "2022"
+    institution: "National Scholarship"
+  - period: "2021"
+    institution: "National Scholarship"
